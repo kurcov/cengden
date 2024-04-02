@@ -1,0 +1,12 @@
+<h1><%= doc.tite %></h1>
+<article class="article">
+    <li>cars</li>
+        <li><%= doc.type %> </li>
+        <li><%= doc.price %></li>
+        <li><%= doc.owner %></li>
+
+        <form action="/item/<%= doc._id%>?_method=DELETE" method="DELETE">
+            <input type="submit" value="Delete" class="btn-delete btn">
+          </form>
+
+</article>
